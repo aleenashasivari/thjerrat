@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrrolo njohurite</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Thjerrat Optike</h1>
+    <p>Eksploro optikën në një mënyrë të re dhe interesante!</p>
+    <button class="explore-btn"><a href="index.html">Kthehu ne faqen kryesore</a></button>
+  </header>
+
+  <main>
+  <section class="quiz-section">
+    <h2>Kuizi: Sa di për thjerrat?</h2>
+    <p>Qfare jane thjerrat?</p>
+    <button class="answer-btn" data-correct="true">Trupat prej qelqi</button>
+    <button class="answer-btn" data-correct="false">Trupat prej gazi</button>
+    <div class="answer"></div>
+  </section>
+
+  <section class="quiz-section">
+    <p>Si ndahen thjerrat?</p>
+    <button class="answer-btn" data-correct="true">Permbledhese, shperndarese</button>
+    <button class="answer-btn" data-correct="false">Real, virtual</button>
+    <div class="answer"></div>
+  </section>
+
+  <section class="quiz-section">
+  <p>Sa lloje te rrezeve kane thjerrat?</p>
+  <button class="answer-btn" data-correct="false">4</button>
+  <button class="answer-btn" data-correct="true">3</button>
+  <div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Me bashkimin e rrezeve formohet:</p>
+<button class="answer-btn" data-correct="true">Shembellimi</button>
+<button class="answer-btn" data-correct="false">Asgje</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Si ndahet shembellimi</p>
+<button class="answer-btn" data-correct="false">Permbledhes dhe shperndares</button>
+<button class="answer-btn" data-correct="true">Real dhe virtual</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Qfare eshte largpamesia?</p>
+<button class="answer-btn" data-correct="true">Nje defekt kur nje person ka vështirësi të shohë objektet e afërta</button>
+<button class="answer-btn" data-correct="false">Nje defekt kur nje person ka veshtiresi te shohë objektet e largeta</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Pse krijohet largpamesia?</p>
+<button class="answer-btn" data-correct="false">Syri është më i gjatë se normalja</button>
+<button class="answer-btn" data-correct="true">Syri është më i shkurtër se normalja</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Si korrigjohet largpamesia?</p>
+<button class="answer-btn" data-correct="false">Korrigjohet lente konvkave</button>
+<button class="answer-btn" data-correct="true">Korrigjohet me lente konvergjente</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Si shenohet largpamesia?</p>
+<button class="answer-btn" data-correct="true">Me +</button>
+<button class="answer-btn" data-correct="false">Me -</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Qfare eshte shkurtpamesia?</p>
+<button class="answer-btn" data-correct="true">Nje defekt kur nje person ka vështirësi të shohë objektet e largeta</button>
+<button class="answer-btn" data-correct="false">Nje defekt kur nje person ka veshtiresi te shohë objektet e aferta</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Pse krijohet shkurtpamesia?</p>
+<button class="answer-btn" data-correct="false">Syri është më i shkurtër se normalja</button>
+<button class="answer-btn" data-correct="true">Syri është më i gjatë se normalja</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Si korrigjohet shkurtpamesia?</p>
+<button class="answer-btn" data-correct="true" >Korrigjohet lente konkave</button>
+<button class="answer-btn" data-correct="false">Korrigjohet me lente konvergjente</button>
+<div class="answer"></div>
+</section>
+
+<section class="quiz-section">
+<p>Si shenohet largpamesia?</p>
+<button class="answer-btn" data-correct="false">Me +</button>
+<button class="answer-btn" data-correct="true">Me -</button>
+<div class="answer"></div>
+</section>
+
+
+<script>
+const answerButtons = document.querySelectorAll('.answer-btn');
+
+answerButtons.forEach(button=> {
+  button.addEventListener('click', () => {
+    const isCorrect = button.dataset.correct === 'true';
+    const answerDiv = button.parentElement.querySelector('.answer')
+    if (isCorrect) {
+      answerDiv.textContent = 'Sakte';
+      answerDiv.style.color = 'green';
+    } else {
+      answerDiv.textContent = 'Gabim! Provo serish.';
+      answerDiv.style.color = 'red'
+    }
+});
+});
+</script>
+
+</main>
+  
+</body>
+</html>

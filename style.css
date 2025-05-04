@@ -1,0 +1,164 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #a2d2ff, #b5ead7, #caffbf, #a2d2ff);
+  background-size: 400% 400%;
+  animation: smoothGradient 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+@keyframes smoothGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+header {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  margin-bottom: 0.2em;
+}
+
+.explore-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #005fa3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn a:hover {
+  background-color: #004080;
+}
+
+main {
+  padding: 2em;
+}
+
+.intro, .quiz-section, .fun-facts {
+  background-color: #f2f9ff;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.rrezet {
+  background-color: #f2f9ff;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  font-family: Arial, sans-serif;
+}
+
+.rrezet ol {
+  padding-left: 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.images img {
+  width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+.thjerrat-container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.thjerrat-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1em;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.thjerrat-item:hover {
+  transform: scale(1.05);
+}
+
+.thjerrat-img {
+  width: 10em;
+  height: 10em;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.quiz-section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-section button {
+  margin: 10px 10px 0 0;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-section button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.answer {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.fun-facts ul {
+  list-style-type: '✨ ';
+  padding-left: 1.5em;
+}
+
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
